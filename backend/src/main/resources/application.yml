@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: stockflow-nosql
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/stockflow_nosql}
+
+server:
+  port: ${PORT:8080}
+
+jwt:
+  secret: ${JWT_SECRET:CHANGE_THIS_DEVELOPMENT_KEY_BEFORE_PRODUCTION_USE_12345}
+  expiration-hours: 8
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
