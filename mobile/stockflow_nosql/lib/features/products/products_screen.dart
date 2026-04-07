@@ -156,6 +156,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
                                 token: _token!,
                               ),
                             );
+                            await _loadData();
                           },
                     title: Text(product.name),
                     subtitle: Text(_productSubtitle(product)),
